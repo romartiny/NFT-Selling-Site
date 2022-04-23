@@ -4,6 +4,11 @@
     <meta charset='UTF-8'/>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>NFT SITE</title>
 </head>
 <body>
@@ -11,13 +16,13 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class='container'>
+        <div class="container">
             <div class='header__info'>
                 <div class='header__logo'>
                     <img src='img/logo.svg' alt='header logo'/>
                 </div>
                 <div class='header__data'>
-                    <ul class="header__data">
+                    <ul class="header__data-list">
                         <li class="header__data-text">
                             <a class="header__data-link" href='#'>Collection</a>
                         </li>
@@ -31,7 +36,9 @@
                             <a class="header__data-link" href='#'>Team</a>
                         </li>
                     </ul>
-                    <a class="header__link" href='#'>OpenSea</a>
+                    <div class="header__open">
+                        <button class="header__button button" href='#'>OpenSea</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,15 +57,20 @@
                         <h5 class="home__info-collection">NFT Collection</h5>
                     </div>
                     <div class='home__info-title'>
-                        <h1 class="home__info-nft">Bored NFT Peeps</h1>
+                        <h1 class="home__info-nft">Bored</h1>
+                        <h2 class="home__info-info">NFT Peeps</h2>
                     </div>
                     <div class='home__info-description'>
                         <p class="home__info-text">Tempor interdum sed nisl aliquam ut orci feugiat neque. Nibh amet proin in tristique. Ipsum morbi adipiscing faucibus eu odio in tellus risus.</p>
                     </div>
-                    <div class='home__link'>OpenSea</div>
+                    <div class='home__link'>
+                        <button class="header__button button" href='#'>OpenSea</button>
+                    </div>
                 </div>
-                <img src='img/home-first-man.svg' alt='first nft man'/>
-                <img src='img/home-second-man.svg' alt='second nft man'/>
+                <img class="home__first-man" src='img/home-first-man.svg' alt='first nft man'/>
+                <img class="home__second-man" src='img/home-second-man.svg' alt='second nft man'/>
+                <img class="home__first-round" src="img/home-second-round.svg" alt="design round">
+                <img class="home__second-round" src="img/home-second-round.svg" alt="design round">
             </div>
         </section>
 
@@ -86,10 +98,11 @@
                                 <p class="collection__item-text">Tempor interdum sed nisl aliquam ut orci feugiat neque. Nibh amet proin in tristique. Ipsum morbi adipiscing faucibus eu odio in tellus risus.</p>
                             </li>
                         </ul>
-                        <img src='img/collection-img.svg' alt='collection image'/>
                     </div>
+                    <img class="collection__img" src='img/collection-img.svg' alt='collection image'/>
                 </div>
             </div>
+            <div class="collection__wave"></div>
         </section>
 
         <!-- SECTION CONTENT -->
@@ -97,15 +110,15 @@
         <section class="content">
             <div class='container'>
                 <div class='content__info'>
-                    <div class="content__center center">
+                    <div class="content__center">
                         <h5 class="content__rarity">Rarity</h5>
                         <h2 class="content__title">Exclusive Content</h2>
                     </div>
-                    <div class='content__list'>
+                    <div class="content__list-block">
                         <ul class="content__list">
 
                             <li class="content__list-item">
-                                <h6 clss="content__list-title">Common</h6>
+                                <h6 class="content__list-title">Common</h6>
                                 <p class="content__list-tier">Tier 1</p>
                                 <ul class="content__stage">
                                     <li class="content__stage-item">
@@ -123,13 +136,13 @@
                                     <li class="content__stage-item">
                                         <img src='img/content-stage-low.svg' alt='low stage'/>
                                     </li>
-                                    <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
-                                    <img src='img/content-common-img.svg' alt='common nft'/>
                                 </ul>
+                                <p class="content__list-description">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
+                                <img class="content__stage-first" src='img/content-common-img.svg' alt='common nft'/>
                             </li>
 
                             <li class="content__list-item">
-                                <h6 clss="content__list-title">Uncommon</h6>
+                                <h6 class="content__list-title">Uncommon</h6>
                                 <p class="content__list-tier">Tier 2</p>
                                 <ul class="content__stage">
                                     <li class="content__stage-item">
@@ -147,13 +160,13 @@
                                     <li class="content__stage-item">
                                         <img src='img/content-stage-low.svg' alt='low stage'/>
                                     </li>
-                                    <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
-                                    <img src='img/content-uncommon-img.svg' alt='uncommon nft'/>
                                 </ul>
+                                <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
+                                    <img src='img/content-uncommon-img.svg' alt='uncommon nft'/>
                             </li>
 
                             <li class="content__list-item">
-                                <h6 clss="content__list-title">Rare</h6>
+                                <h6 class="content__list-title">Rare</h6>
                                 <p class="content__list-tier">Tier 3</p>
                                 <ul class="content__stage">
                                     <li class="content__stage-item">
@@ -171,13 +184,13 @@
                                     <li class="content__stage-item">
                                         <img src='img/content-stage-low.svg' alt='low stage'/>
                                     </li>
-                                    <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
-                                    <img src='img/content-rare-img.svg' alt='rare nft'/>
                                 </ul>
+                                <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
+                                    <img src='img/content-rare-img.svg' alt='rare nft'/>
                             </li>
 
                             <li class="content__list-item">
-                                <h6 clss="content__list-title">Very Rare</h6>
+                                <h6 class="content__list-title">Very rare</h6>
                                 <p class="content__list-tier">Tier 4</p>
                                 <ul class="content__stage">
                                     <li class="content__stage-item">
@@ -195,13 +208,13 @@
                                     <li class="content__stage-item">
                                         <img src='img/content-stage-low.svg' alt='low stage'/>
                                     </li>
-                                    <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
-                                    <img src='img/content-very-rare-img.svg' alt='very rare nft'/>
                                 </ul>
+                                <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
+                                    <img src='img/content-very-rare-img.svg' alt='very rare nft'/>
                             </li>
 
                             <li class="content__list-item">
-                                <h6 clss="content__list-title">Legendary</h6>
+                                <h6 class="content__list-title">Legendary</h6>
                                 <p class="content__list-tier">Tier 5</p>
                                 <ul class="content__stage">
                                     <li class="content__stage-item">
@@ -219,9 +232,9 @@
                                     <li class="content__stage-item">
                                         <img src='img/content-stage-low.svg' alt='high stage'/>
                                     </li>
-                                    <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
-                                    <img src='img/content-legendary-img.svg' alt='legendary nft'/>
                                 </ul>
+                                <p class="content-list-desctiption">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
+                                    <img src='img/content-legendary-img.svg' alt='legendary nft'/>
                             </li>
                         </ul>
                     </div>   

@@ -1,0 +1,381 @@
+/* START SETTINGS */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
+.container {
+    position: relative;
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER SECTION */
+
+.header {
+    width: 100%;
+}
+
+.header__info {
+    display: flex;
+    padding-top: 30px;
+    /* margin: 0 auto; */
+}
+
+.header__logo {
+    width: 38px;
+    height: 38px;
+}
+
+.header__data {
+    display: flex;
+    margin-left: 150px;
+}
+
+.header__data-list {
+    display: flex;
+}
+
+.header__data-text {
+    padding-left: 65px;
+    margin: 0 auto;
+    width: 170px;
+}
+
+.header__data-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    transition: 1s;
+}
+
+.header__data-link:hover {
+    color: #ce43d7;
+    transform: scale(1.0);
+}
+
+.header__open {
+    padding-top: 5px;
+    padding-left: 165px;
+}
+
+.button {
+    width: 135px;
+    height: 45px;
+    background-color: #F7859C;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button:hover {
+    color: #b9b9b9;
+    transform: scale(1.0);
+}
+
+/* COLLECTION SECTION */
+
+.home {
+    padding-top: 100px;
+}
+
+.home__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__info-collect {
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+.home__info-collection {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+.home__info-title {
+    margin: 0 auto;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.home__info-nft {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 97px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home__info-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 97px;
+    line-height: 85px;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home__info-description {
+    margin-top: -20px;
+}
+
+.home__info-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #404756;
+    line-height: 25px;
+    width: 420px;
+}
+
+.home__link {
+    padding-top: 15px;
+    padding-bottom: 300px;
+}
+
+.home__first-man {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    left: -130px;
+    z-index: 1;
+}
+
+.home__second-man {
+    position: absolute;
+    right: 0;
+    top: 180px;
+    right: -70px;
+    z-index: 1;
+}
+
+.home__first-round {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    left: -150px;
+    transform: rotate(120deg);
+}
+
+.home__second-round {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    right: -150px;
+}
+
+/* COLLECTION SECTION */
+
+.collection__info {
+    margin-bottom: 120px;
+}
+
+.collection__center {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.collection__info-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+
+.collection__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.collection__item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222222;
+    line-height: 22px;
+}
+
+.collection__item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    height: 100px;
+    width: 330px;
+    color: #404756;
+    padding-bottom: 160px;
+}
+
+.collection__item-text:after {
+    content: "";
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    width: 374px;
+    height: 30px;
+    border-top: 1px solid rgba(64, 71, 86, 0.6);
+    z-index: -1;
+}
+
+.collection__item-text:before {
+    content: "";
+    position: absolute;
+    bottom: 230px;
+    left: 80px;
+    width: 374px;
+    height: 30px;
+    border-top: 1px solid rgba(64, 71, 86, 0.6);
+    z-index: -1;
+}
+
+.collection__img {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+.collection__wave {
+    display: block;
+    height: 330px;
+    background-image: url('../img/content-wave-up.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center center;
+    color: #FFFFFF;
+    z-index: 1;
+    margin-bottom: -120px;
+}
+
+/* CONTENT SECTION */
+
+.content {
+    background: rgb(251, 241, 230);
+}
+
+.content__center {
+    padding-top: 130px;
+}
+
+.content__rarity {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: -30px;
+    margin-left: 2px;
+}
+
+.content__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 58px;
+    /* text-align: center; */
+}
+
+.content__list-block {
+    padding-top: 50px;
+}
+
+.content__list-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.content__list-tier {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.content__stage {
+    display: flex;
+    margin-top: -37px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.content__stage-item {
+    padding-left: 5px;
+}
+
+.content__list-description {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 330px;
+    height: 126px;
+    padding-bottom: 360px;
+}
+
+.content__stage-first {
+    position: absolute;
+    top: 450px;
+    right: 100px;
+}
