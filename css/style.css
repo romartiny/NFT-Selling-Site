@@ -274,7 +274,7 @@ li {
     z-index: -1;
 }
 
-.collection__item-text:before {
+.collection__item-text::before {
     content: "";
     position: absolute;
     bottom: 230px;
@@ -371,11 +371,258 @@ li {
     line-height: 25px;
     width: 330px;
     height: 126px;
-    padding-bottom: 360px;
+    padding-bottom: 460px;
 }
 
 .content__stage-first {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__stage-second {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__stage-third {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__stage-fourth {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__stage-fifth {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__stage-sixth {
+    display: flex;
+    float: right;
+    margin-top: -40px;
+}
+
+.content__list-item::after {
+    content: "";
     position: absolute;
-    top: 450px;
-    right: 100px;
+    top: 400px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+.content__list-item::before {
+    content: "";
+    position: absolute;
+    top: 1100px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+.content__list-tier::before {
+    content: "";
+    position: absolute;
+    top: 1750px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+.content__list-tier::after {
+    content: "";
+    position: absolute;
+    top: 2450px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+.content__list-description::after {
+    content: "";
+    position: absolute;
+    top: 3150px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+.content__list-description::before {
+    content: "";
+    position: absolute;
+    top: 3800px;
+    left: 80px;
+    width: 100%;
+    border-top: 1px solid rgba(81, 81, 81, 0.6);
+    z-index: 10;
+}
+
+/* ROADMAP SECTION */
+
+.roadmap__wave {
+    display: flex;
+    height: 330px;
+    background-image: url('../img/content-wave-down.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center center;
+    color: #FFFFFF;
+    z-index: 11;
+    margin-top: -120px;
+}
+
+.roadmap__center {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.roadmap__releases {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+.roadmap__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.roadmap__block {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 1200px; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.roadmap__list-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: space-around;
+    padding-top: 180px;
+}
+
+.roadmap__item-date {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    margin-top: -35px;
+    margin-left: 190px;
+}
+
+.roadmap__item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    /* margin-left: -45px; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.roadmap__item-description {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 336px;
+    padding-bottom: 120px;
+}
+
+.roadmap__dot {
+    margin-top: -30px;
+    margin-left: -295px;
+}
+
+.roadmap__per {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -30px;
+    margin-left: -190px;
+}
+
+.roadmap__back-first {
+    position: absolute;
+    z-index: -1;
+    top: 220px;
+}
+
+.roadmap__back-second {
+    position: absolute;
+    z-index: -1;
+    top: 780px;
+}
+
+.roadmap__back-third {
+    position: absolute;
+    z-index: -1;
+    top: 1330px;
+}
+
+.roadmap__back-fourth {
+    position: absolute;
+    z-index: -1;
+    top: 1890px;
+}
+
+.roadmap__back-fifth {
+    position: absolute;
+    z-index: -1;
+    top: 2450px;
+}
+
+.roadmap__back-sixth {
+    position: absolute;
+    z-index: -1;
+    top: 2990px;
+}
+
+.roadmap__first-img {
+    position: absolute;
+    top: 230px;
+    right: -30px;
+}
+
+.roadmap__third-img {
+    position: absolute;
+    top: 1340px;
+    left: -120px;
+}
+
+.roadmap__second-img {
+    position: absolute;
+    top: 2510px;
+    right: -30px;
 }
